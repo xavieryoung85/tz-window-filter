@@ -1,0 +1,22 @@
+{
+  "name": "tz-window-filter",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Filter a stream of timestamps by local time-of-day window in a given timezone, DST included.",
+  "type": "module",
+  "bin": {
+    "tz-window-filter": "./dist/cli.js"
+  },
+  "main": "./dist/timezone-window.js",
+  "types": "./dist/timezone-window.d.ts",
+  "exports": {
+    ".": "./dist/timezone-window.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT"
+}
