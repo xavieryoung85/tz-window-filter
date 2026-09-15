@@ -57,8 +57,18 @@ const window = parseWindow('09:00-17:00');
 isInWindow(new Date('2026-03-08T14:30:00-05:00'), 'America/New_York', window); // true
 ```
 
+## Testing
+
+Tests use Node's built-in test runner and live alongside the source as
+`*.test.ts`. They cover DST spring-forward and fall-back boundaries directly,
+since that's the entire reason this project exists.
+
+```
+npm test
+```
+
 ## Status
 
 Early skeleton: single-window filtering over a line-delimited stream. See
 the roadmap in project notes for what's planned next (CSV column selection,
-multi-window support, a proper test suite).
+multi-window support).
